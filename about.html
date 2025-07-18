@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Creissant</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    
+    <!-- Left Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="image/creissant.png" alt="Logo" class="logo">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <!-- Center Nav Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Residential Construction</a></li>
+            <li><a class="dropdown-item" href="#">Industrial Construction</a></li>
+            <li><a class="dropdown-item" href="#">Commercial Construction</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Right Social Icons -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- about -->
+ <section class="about-section py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Content -->
+      <div class="col-md-6">
+        <div class="about-content">
+          <h2><strong>About Us</strong></h2>
+          <p>
+            At <strong>Creissant Construction</strong>, we are dedicated to shaping exceptional spaces that elevate modern living. 
+            Combining innovative design, superior craftsmanship, and a commitment to sustainability, 
+            we deliver construction solutions that stand the test of time.
+          </p>
+          <p>
+            Our vision is to create buildings that not only meet our clients’ aspirations but also contribute positively 
+            to the environment and the community. From concept to completion, we prioritize quality, transparency, 
+            and client satisfaction in every project we undertake — whether it’s residential, commercial, or mixed-use development.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Right side -->
+      <div class="col-md-6 text-center position-relative">
+        <div class="about-image-container position-relative">
+          <!-- SVG clipPath definition -->
+          <svg width="0" height="0">
+            <defs>
+              <clipPath id="blobClip" clipPathUnits="objectBoundingBox">
+                <path d="M0.8,0.1 C0.9,0.3 0.9,0.7 0.7,0.85 C0.5,1 0.2,1 0.1,0.7 C0,0.4 0.1,0.1 0.3,0.05 C0.5,0,0.7,-0.05,0.8,0.1Z" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <!-- Main Image with blob clip -->
+          <img
+            src="https://sobhaconstructions.com/source/uploads/2024/03/Untitled_design_(35)_20240321_651b9.png"
+            alt="About"
+            class="about-image"
+            style="clip-path: url(#blobClip); -webkit-clip-path: url(#blobClip);"
+          >
+
+          <!-- Decorative Dots -->
+          <img src="image/download.png" 
+               alt="dots"
+               class="shape-dots position-absolute"
+               style="width: 120px; top: 10%; left: 80%;">
+
+          <!-- Decorative Lines -->
+          <svg class="shape-lines position-absolute" width="90" height="90" viewBox="0 0 100 100" style="bottom: 10%; left: 10%;">
+            <line x1="0" y1="0" x2="100" y2="100" stroke="#999" stroke-width="3" />
+            <line x1="0" y1="20" x2="80" y2="100" stroke="#999" stroke-width="3" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- intro -->
+ <section class="intro-wrapper">
+  <div class="intro-left">
+    <h6 class="tagline">TEAM OF PROFESSIONALS</h6>
+    <h1 class="main-title">Welcome to <br>Creissant Construction</h1>
+    <button class="btn btn-yellow">VIEW ALL INFORMATION</button>
+  </div>
+
+  <div class="intro-right">
+    <h3 class="section-heading">Our History and Our Mission</h3>
+    <p class="description">
+      <strong>Creissant Construction</strong> is a trusted name in the construction industry, proudly serving Hosur and surrounding regions. Since our inception, we have been driven by a clear purpose: to create inspiring, durable, and sustainable spaces where people can live, work, and thrive.
+    </p>
+    <p class="description">
+      Over the years, we have completed hundreds of residential, commercial, and industrial projects — each crafted with meticulous attention to detail and unwavering commitment to quality. Our expert team combines innovative techniques with time-tested craftsmanship, ensuring every structure reflects strength, beauty, and functionality.
+    </p>
+    <p class="description">
+      At Creissant, we believe construction is more than just building walls — it’s about <span style="color:rgb(102, 195, 105);">building relationships and dreams</span>. Our mission is to deliver exceptional value through transparent processes, sustainable practices, and personalized service, making your vision a reality.
+    </p>
+
+    <div class="stats-container">
+      <div class="stats-item">
+        <h2 class="count">326+</h2>
+        <h5 class="label">Completed Projects</h5>
+        <small class="subtext">Across Hosur & Tamil Nadu</small>
+      </div>
+      <div class="stats-item">
+        <h2 class="count">18+</h2>
+        <h5 class="label">Awards & Recognition</h5>
+        <small class="subtext">For excellence in construction</small>
+      </div>
+      <div class="stats-item">
+        <h2 class="count">880+</h2>
+        <h5 class="label">Happy Clients</h5>
+        <small class="subtext">Who trust our expertise</small>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="miss bg-light">
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold" style="color:rgb(102, 195, 105)">Who We Are</h1>
+      <p class="lead">
+        Our Mission, Vision & Values — Building Hosur’s Future Together
+      </p>
+    </div>
+    <div class="row g-4">
+
+      <!-- Mission -->
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://img.freepik.com/free-photo/3d-rendering-arrow-hitting-target_23-2151266523.jpg" alt="Mission Icon" class="img-fluid mb-3">
+              <h2>OUR MISSION</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                At <strong>Creissant Construction</strong>, our mission is to craft high-quality, sustainable, and inspiring spaces
+                that reflect our clients’ aspirations. We are committed to delivering every project in Hosur and beyond
+                with integrity, innovation, and excellence, ensuring a positive impact on the community and environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://img.freepik.com/free-photo/futuristic-big-brother-concept_23-2149670643.jpg" alt="Vision Icon" class="img-fluid mb-3">
+              <h2>OUR VISION</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                To become Hosur’s most trusted construction partner, known for creating timeless landmarks and vibrant
+                communities. We envision redefining the standards of construction through cutting-edge designs, sustainable
+                practices, and a people-first approach.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="col-md-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="https://img.freepik.com/free-photo/business-concept-with-team-close-up_23-2149151159.jpg" alt="Values Icon" class="img-fluid mb-3">
+              <h2>OUR VALUES</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                <strong>Quality, Integrity, Innovation, Sustainability, and Collaboration</strong> — these values guide every
+                decision we make. At Creissant, we believe in building more than just structures: we build trust, foster
+                partnerships, and create lasting value for our clients and our community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- whychoose -->
+<div class="container section">
+  <div class="row">
+    <!-- Left content -->
+    <div class="col-md-6 d-flex align-items-center" id="whyleft">
+      <div class="left-content my-auto" >
+        <h2><strong>Why Choose Us?</strong></h2>
+        <p id="ao">
+          Choosing the right partner for your project can make all the difference. 
+          We are dedicated to delivering exceptional results that meet your vision, 
+          combining innovation, expertise, and attention to detail. 
+          Every step of the way, we strive to create spaces that truly feel like home 
+          functional, beautiful, and built to last.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right scrollable content -->
+    <div class="col-md-6">
+      <div class="right-contents">
+        
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h5><strong>Tailored Approach</strong></h5>
+          <p>We listen closely to your needs to design and deliver spaces that reflect your unique style and priorities.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👷‍♂️</div>
+          <h5><strong>Professional Expertise</strong></h5>
+          <p>Our team brings knowledge, skill, and a commitment to quality, ensuring every detail is handled with care.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h5><strong>End-to-End Service</strong></h5>
+          <p>From planning to completion, we manage the process seamlessly so you can focus on what matters most.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h5><strong>Value-Driven Results</strong></h5>
+          <p>We work efficiently and transparently, delivering high-quality outcomes that make the most of your investment.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h5><strong>Sustainable Choices</strong></h5>
+          <p>We incorporate eco-friendly materials and practices to minimize environmental impact wherever possible.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h5><strong>Clear Communication</strong></h5>
+          <p>We keep you informed throughout the process, building trust through open and honest communication.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🕒</div>
+          <h5><strong>On-Time Completion</strong></h5>
+          <p>We respect your time by adhering to timelines and delivering projects as promised.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h5><strong>Support That Lasts</strong></h5>
+          <p>Even after the project is done, our team is here to assist with any follow-up needs or questions.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="experts-section">
+    <div class="container">
+        <h2>Our Experts</h2>
+        <div class="underline"></div>
+        <p class="mb-5">
+            Duis vel erat quis justo vehicula vulputate sit amet nec nisi. Fusce a venenatis arcu.
+        </p>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="expert-card">
+                    <img src="image/team1.avif" alt="Expert 1">
+                    <div class="expert-overlay">
+                        <h5>John Doe</h5>
+                        <p>Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="expert-card">
+                    <img src="image/team2.avif" alt="Expert 2">
+                    <div class="expert-overlay">
+                        <h5>Alex Smith</h5>
+                        <p>Technician</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="expert-card">
+                    <img src="image/team3.jpg" alt="Expert 3">
+                    <div class="expert-overlay">
+                        <h5>Mike Johnson</h5>
+                        <p>Supervisor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="expert-card">
+                    <img src="image/team4.jpg" alt="Expert 4">
+                    <div class="expert-overlay">
+                        <h5>David Lee</h5>
+                        <p>Architect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1 class="fw-bold display-5">Experience Quality Construction Services. Contact Us Today!</h1>
+    <p class="lead mb-4">Let’s work together to make your vision a reality.</p>
+    <div>
+      <a href="#" class="btn btn-red me-2">Enquire Now</a>
+      <!-- <a href="#brochure" class="btn btn-red">Brochure</a> -->
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+  <div class="carousel-item active">
+    <div class="text-center">
+      <img src="image/client1.jpg" class="rounded-circle mb-3" alt="Client 1">
+      <blockquote class="blockquote">
+        <p>"This company exceeded our expectations. Highly recommend!"</p>
+      </blockquote>
+      <footer class="blockquote-footer">Arun Kumar, <cite title="Company 1">Acme Inc.</cite></footer>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="text-center">
+      <img src="image/client2.jpg" class="rounded-circle mb-3" alt="Client 2">
+      <blockquote class="blockquote">
+        <p>"Professional and reliable. Will definitely work with them again."</p>
+      </blockquote>
+      <footer class="blockquote-footer">Priya, <cite title="Company 2">Beta LLC</cite></footer>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="text-center">
+      <img src="image/client3.jpg" class="rounded-circle mb-3" alt="Client 3">
+      <blockquote class="blockquote">
+        <p>"Outstanding service and support throughout the project."</p>
+      </blockquote>
+      <footer class="blockquote-footer">Vikram Raj, <cite title="Company 3">Gamma Co.</cite></footer>
+    </div>
+  </div>
+
+</div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="footer-section text-center text-lg-start text-white">
+  <div class="container p-4">
+    <div class="row">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Our Company</h5>
+<p>
+  We specialize in residential and commercial construction, offering end-to-end solutions from planning to project handover. Our commitment to quality, innovation, and integrity ensures that every structure we build meets the highest industry standards. 
+</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Quick Links</h5>
+<ul class="list-unstyled mb-0">
+  <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+  <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+  <li class="mb-2"><a href="#" class="text-white">Services</a></li>
+  <li class="mb-2"><a href="#" class="text-white">Gallery</a></li>
+  <li class="mb-2"><a href="#" class="text-white">Blog</a></li>
+  <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+</ul>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact</h5>
+        <p><i class="fas fa-home me-3"></i> Bangalore, Dubai</p>
+  <p>
+    <i class="fas fa-envelope me-3"></i>
+    <a href="mailto:puzzle@diplomats.co.in" class="text-decoration-none text-light">
+      puzzle@diplomats.co.in
+    </a>
+  </p>
+  <p>
+    <i class="fas fa-phone me-3"></i>
+    <a href="tel:+917094858696" class="text-decoration-none text-light">
+      +91 70948 58696
+    </a>
+  </p>
+      </div>
+
+      <!-- Social Media -->
+<!-- Social Media + Gallery -->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Follow Us</h5>
+  <div class="social-links d-flex justify-content-center justify-content-lg-start mt-2">
+    <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="me-3 text-white"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="me-3 text-white"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <h5 class="text-uppercase mt-3">Gallery</h5>
+  <div class="footer-gallery d-flex flex-wrap gap-2">
+    <img src="image/footer-v1-img1.jpg" class="img-fluid rounded" alt="gallery 1">
+    <img src="image/footer-v1-img2.jpg" class="img-fluid rounded" alt="gallery 2">
+    <img src="image/footer-v1-img3.jpg" class="img-fluid rounded" alt="gallery 3">
+    <img src="image/footer-v1-img4.jpg" class="img-fluid rounded" alt="gallery 4">
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-dark text-white">
+    © 2025 Your Company Name. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
