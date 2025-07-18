@@ -17,6 +17,7 @@
 
 <body>
 
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
@@ -37,12 +38,12 @@
       <!-- Center Nav Links -->
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
@@ -127,6 +128,14 @@
     </div>
   </div>
 </div>
-
+<script>
+  const servicesLink = document.getElementById('navbarDropdown');
+  servicesLink.addEventListener('click', function(e) {
+    // Only navigate if no dropdown menu item is clicked
+    if (!e.target.closest('.dropdown-menu')) {
+      window.location.href = 'service.html';
+    }
+  });
+</script>
 </body>
 </html>

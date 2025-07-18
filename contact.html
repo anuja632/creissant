@@ -237,6 +237,15 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const servicesLink = document.getElementById('navbarDropdown');
+  servicesLink.addEventListener('click', function(e) {
+    // Only navigate if no dropdown menu item is clicked
+    if (!e.target.closest('.dropdown-menu')) {
+      window.location.href = 'service.html';
+    }
+  });
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>

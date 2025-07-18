@@ -1548,11 +1548,7 @@ svg {
   box-sizing: border-box;
 }
 
-body {
-  padding: 60px 20px;
-  font-family: var(--font-base);
-  background-color: var(--color-medium-light);
-}
+
 
 .l-title {
   font-size: 48px;
