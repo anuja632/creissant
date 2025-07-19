@@ -123,7 +123,9 @@ function resetCarouselState() {
   // Reset the running time bar animation
   resetAnimation();
 }
- 
+
+
+
  
  const teamData = [
     {
@@ -165,4 +167,24 @@ function resetCarouselState() {
       img.classList.toggle("active", i === index);
     });
   }
+
+const reasons = document.querySelectorAll('.reason');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+reasons.forEach(reason => {
+  observer.observe(reason);
+});
+
+
+
+
 

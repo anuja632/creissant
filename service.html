@@ -7,6 +7,7 @@
 
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
@@ -38,20 +39,20 @@
       <!-- Center Nav Links -->
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item dropdown active">
+        <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
 
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Residential Construction</a></li>
-            <li><a class="dropdown-item" href="#">Industrial Construction</a></li>
-            <li><a class="dropdown-item" href="#">Commercial Construction</a></li>
+            <li><a class="dropdown-item" href="residential.html">Residential Construction</a></li>
+            <li><a class="dropdown-item" href="industrial.html">Industrial Construction</a></li>
+            <li><a class="dropdown-item" href="commercial.html">Commercial Construction</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -83,10 +84,83 @@
     </div>
   </div>
 </nav>
+
+
 <div class="main">
 
 </div>
+<section class="hero-banner">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Our Construction Services</h1>
+    <p class="hero-subtitle">
+      Residential, Commercial & Industrial construction solutions built with precision, innovation, and excellence.
+    </p>
+  </div>
+</section>
 <h1 class="l-title">Our Services</h1>
+
+<div class="car">
+  <div class="slider">
+    <ul>
+      <li>
+        <input type="radio" name="slide"   id="slide1" checked="checked">
+        <div class="slide">
+          <div class="left left-face">
+            <img src="image/modernbuildingconstruction.jpg">
+          </div>
+          <div class="right right-face">
+            <div class="content">
+              <h2>Residential Construction</h2>
+              <p>
+                We build beautiful, durable homes designed for comfort and modern living. Whether it’s a single-family home, an apartment complex, or a luxury villa, we deliver craftsmanship and attention to detail every step of the way.
+              </p>
+              <a href="residential.html" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="slide" id="slide2">
+        <div class="slide">
+          <div class="left left-face">
+            <img src="image/constructionsite.jpg">
+          </div>
+          <div class="right right-face">
+            <div class="content">
+              <h2>Commercial Construction</h2>
+              <p>
+                From office spaces to retail outlets and large shopping complexes, we create functional, aesthetic commercial environments to help your business thrive. On time, on budget, and built to impress.
+              </p>
+              <a href="commercial.html" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <input type="radio" name="slide"  id="slide3">
+        <div class="slide">
+          <div class="left left-face">
+            <img src="image/illustrationconstructionsite.jpg">
+          </div>
+          <div class="right right-face">
+            <div class="content">
+              <h2>Industrial Construction</h2>
+              <p>
+                We specialize in constructing robust industrial facilities including factories, warehouses, and distribution centers. Our projects are designed with efficiency, scalability, and safety at the core.
+              </p>
+              <a href="industrial.html" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
 
 <div class="cards-container">
   <div class="card">
@@ -128,6 +202,309 @@
     </div>
   </div>
 </div>
+
+<section class="process-section py-5">
+  <div class="container text-center">
+  <h2 class="fw-bold mb-5">Our Construction Process</h2>
+
+    <div class="position-relative">
+      <!-- Wavy line -->
+      <img src="https://unicktheme.com/bixola/assets/images/shapes/process-one-shape-1.png" alt="Process line" class="process-line d-none d-md-block">
+
+    <div class="row gy-4">
+      <!-- Step 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-step mx-auto">
+          <div class="step-number">01</div>
+          <h5 class="fw-bold mt-3">Site Inspection</h5>
+          <p>We visit your site and evaluate the requirements and potential challenges.</p>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-step mx-auto">
+          <div class="step-number">02</div>
+          <h5 class="fw-bold mt-3">Planning & Design</h5>
+          <p>Our architects and engineers craft a detailed plan tailored to your needs.</p>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-step mx-auto">
+          <div class="step-number">03</div>
+          <h5 class="fw-bold mt-3">Construction Phase</h5>
+          <p>Our skilled team builds your project with precision, safety and quality.</p>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="process-step mx-auto">
+          <div class="step-number">04</div>
+          <h5 class="fw-bold mt-3">Final Handover</h5>
+          <p>We hand over the completed project and ensure your satisfaction.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="get-in-touch-banner text-white text-center py-5" style="background: url('image/bread.jpg') center/cover no-repeat;">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Let’s Build Something Amazing Together</h2>
+    <p class="mb-4">Whether it’s residential, commercial, or industrial, we’re here to help you bring your vision to life. Contact us today to start your project!</p>
+    <a href="contact.html" class="btn btn-primary">
+      <i class="fas fa-phone me-2"></i> Get in Touch
+    </a>
+  </div>
+</section>
+
+
+<div class="testimonial-carousel pt-5">
+  <div class="swiper" id="craouselContainer">
+    <div class="swiper-wrapper" id="slideHolder">
+
+      <div class="swiper-slide">
+        <div class="ImgHolder">
+          <img src="https://img.freepik.com/free-photo/woman-with-long-hair-yellow-hoodie-with-word-music-it_1340-39068.jpg" alt="Simonette Lindermann">
+        </div>
+        <div class="ContentHolder">
+          <h3>Simonette Lindermann</h3>
+          <p>Mind-blowing discovery! Changed my routine. Essential for everyone. Can't imagine without it!</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="ImgHolder">
+          <img src="https://img.freepik.com/free-photo/close-up-portrait-young-bearded-man-white-shirt-jacket-posing-camera-with-broad-smile-isolated-gray_171337-629.jpg" alt="Merilee Beal">
+        </div>
+        <div class="ContentHolder">
+          <h3>Merilee Beal</h3>
+          <p>Unbelievable gem! Altered my life. A must-have now. Wholeheartedly advise it to everyone.</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="ImgHolder">
+          <img src="https://img.freepik.com/free-photo/handsome-african-guy-with-stylish-haircut-taking-photo-digital-camera_171337-1345.jpg" alt="Suzi Lankester">
+        </div>
+        <div class="ContentHolder">
+          <h3>Suzi Lankester</h3>
+          <p>Phenomenal addition! Completely transformed my days. Can't go without it.</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="ImgHolder">
+          <img src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg" alt="Gaston Cunnow">
+        </div>
+        <div class="ContentHolder">
+          <h3>Gaston Cunnow</h3>
+          <p>Amazing product! It changed my life. Can't live without it now.</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="ImgHolder">
+          <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg" alt="Marys Lobb">
+        </div>
+        <div class="ContentHolder">
+          <h3>Marys Lobb</h3>
+          <p>Life-altering find! Indispensable now. Enthusiastically suggest to all.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<section class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <!-- Residential -->
+    <h3>Residential Construction</h3>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>What services do you offer in Residential Construction?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>We offer full-service residential construction including design, planning, and building of single-family homes, apartments, and luxury villas. We tailor each project to your lifestyle and budget.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Can you help with custom home designs?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, we work closely with architects and designers to bring your vision to life. Whether you have plans already or need help creating them, we can guide you through the entire design and build process.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How long does a typical residential project take?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Project timelines vary depending on size and complexity, but most residential homes are completed within 6–12 months. We’ll provide a detailed schedule before construction begins.</p>
+      </div>
+    </div>
+
+    <!-- Commercial -->
+    <h3>Commercial Construction</h3>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How do you handle Commercial Construction projects?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>We manage commercial projects from start to finish, delivering office buildings, retail spaces, and shopping complexes on time and within budget. We ensure functional, attractive, and high-quality spaces for your business.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Do you handle permits and approvals for commercial projects?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, we manage all necessary permits, zoning approvals, and inspections required for your commercial project. We ensure compliance with all local and national building codes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Can you renovate existing commercial spaces?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Absolutely. In addition to new builds, we specialize in renovating and upgrading existing commercial spaces to meet your evolving business needs.</p>
+      </div>
+    </div>
+
+    <!-- Industrial -->
+    <h3>Industrial Construction</h3>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>What makes your Industrial Construction different?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Our industrial construction expertise ensures that factories, warehouses, and logistics centers are built for maximum efficiency, safety, and scalability to meet your operational needs today and in the future.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Do you offer maintenance services after industrial construction?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, we offer post-construction maintenance and support to ensure your facility operates efficiently and remains in excellent condition over time.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How do you ensure safety in industrial projects?</span>
+        <i class="fas fa-plus icon"></i>
+      </button>
+      <div class="faq-answer">
+        <p>Safety is our top priority. We implement strict safety protocols, regular training, and site supervision to protect workers and ensure compliance with OSHA and other standards.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="footer-section text-center text-lg-start text-white">
+  <div class="container p-4">
+    <div class="row">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Our Company</h5>
+<p>
+  We specialize in residential and commercial construction, offering end-to-end solutions from planning to project handover. Our commitment to quality, innovation, and integrity ensures that every structure we build meets the highest industry standards. 
+</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Quick Links</h5>
+<ul class="list-unstyled mb-0">
+  <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+  <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+  <li class="mb-2"><a href="#" class="text-white">Services</a></li>
+  <li class="mb-2"><a href="#" class="text-white">Gallery</a></li>
+  <li class="mb-2"><a href="#" class="text-white">Blog</a></li>
+  <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+</ul>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact</h5>
+        <p><i class="fas fa-home me-3"></i> Bangalore, Dubai</p>
+  <p>
+    <i class="fas fa-envelope me-3"></i>
+    <a href="mailto:puzzle@diplomats.co.in" class="text-decoration-none text-light">
+      puzzle@diplomats.co.in
+    </a>
+  </p>
+  <p>
+    <i class="fas fa-phone me-3"></i>
+    <a href="tel:+917094858696" class="text-decoration-none text-light">
+      +91 70948 58696
+    </a>
+  </p>
+      </div>
+
+      <!-- Social Media -->
+<!-- Social Media + Gallery -->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Follow Us</h5>
+  <div class="social-links d-flex justify-content-center justify-content-lg-start mt-2">
+    <a href="#" class="me-3 text-white"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="me-3 text-white"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="me-3 text-white"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <h5 class="text-uppercase mt-3">Gallery</h5>
+  <div class="footer-gallery d-flex flex-wrap gap-2">
+    <img src="image/footer-v1-img1.jpg" class="img-fluid rounded" alt="gallery 1">
+    <img src="image/footer-v1-img2.jpg" class="img-fluid rounded" alt="gallery 2">
+    <img src="image/footer-v1-img3.jpg" class="img-fluid rounded" alt="gallery 3">
+    <img src="image/footer-v1-img4.jpg" class="img-fluid rounded" alt="gallery 4">
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3 bg-dark text-white">
+    © 2025 Your Company Name. All rights reserved.
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   const servicesLink = document.getElementById('navbarDropdown');
   servicesLink.addEventListener('click', function(e) {
@@ -137,5 +514,93 @@
     }
   });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll('ul li input[type="radio"]');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].checked = false; // uncheck current
+    current = (current + 1) % slides.length; // next index
+    slides[current].checked = true;  // check next
+  }, 4000); // change slide every 4 seconds
+});
+
+
+
+</script>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    const icon = button.querySelector(".icon");
+    const isVisible = answer.style.display === "block";
+
+    // Close all
+    document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+    document.querySelectorAll(".faq-question .icon").forEach(i => {
+      i.classList.remove("fa-minus");
+      i.classList.add("fa-plus");
+    });
+
+    if (!isVisible) {
+      answer.style.display = "block";
+      icon.classList.remove("fa-plus");
+      icon.classList.add("fa-minus");
+    }
+  });
+});
+
+
+
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('#craouselContainer', {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2.3,
+    loop: true,
+    spaceBetween: 30,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        depth: 800,
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    }
+});
+
+window.addEventListener('resize', queryResizer);
+queryResizer();
+
+function queryResizer() {
+    if (window.innerWidth < 501) {
+        swiper.params.slidesPerView = 1;
+    } else if (window.innerWidth < 724) {
+        swiper.params.slidesPerView = 2;
+    } else {
+        swiper.params.slidesPerView = 2.3;
+    }
+    swiper.update();
+}
+</script>
+
+<script src="js/script.js"></script>
+<script src="js/review.js"></script>
+
 </body>
 </html>
+
+
