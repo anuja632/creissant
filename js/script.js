@@ -1,3 +1,21 @@
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.nav-item.dropdown > .nav-link').forEach(function (dropdownLink) {
+      dropdownLink.addEventListener('click', function (e) {
+        const isDropdownShown = this.nextElementSibling?.classList.contains('show');
+        const href = this.getAttribute('href');
+
+        // If dropdown isn't already open, navigate (i.e., treat like a regular link)
+        if (!isDropdownShown && href && href !== '#') {
+          e.preventDefault(); // Prevent Bootstrap dropdown from opening
+          window.location.href = href;
+        }
+        // Otherwise, let Bootstrap handle the dropdown toggle
+      });
+    });
+  });
+
+
 // Select DOM elements
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
