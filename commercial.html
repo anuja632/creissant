@@ -11,13 +11,16 @@
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -44,6 +47,7 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
+        <a href =service.html>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
@@ -55,6 +59,7 @@
             <li><a class="dropdown-item" href="commercial.html">Commercial Construction</a></li>
           </ul>
         </li>
+        </a>
         <li class="nav-item">
           <a class="nav-link" href="#">Gallery</a>
         </li>
@@ -86,8 +91,256 @@
 </nav>
 
 
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content-box">
+      <h3 class="brand-name">CREISSANT CONSTRUCTION</h3>
+      <h1 class="hero-main-title">
+       A Top Trusted
+        <span class="highlighted-text"> House Building Expert in Hosur & Bangalore</span>
+      </h1>
+      <p class="hero-description">
+Enjoy hassle-free Industrial construction services tailored to your needs and budget - delivered with top-notch quality, transparency, on-time completion, and post-build support.      </p>
+      <div class="hero-button-group">
+        <button class="btn-talk" onclick="handleTalk()">CONTACT US</button>
+        <button class="btn-quote" onclick="handleQuote()">GET STARTED</button>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+<section class="about-residential py-5 bg-white text-dark">
+  <div class="container about-container">
+    <div class="row g-4 align-items-start">
+      
+      <!-- Text Content -->
+      <div class="col-lg-6 about-content">
+        <h2 class="section-subtitle fw-semibold mb-2">Industrial Construction</h2>
+        <h5 class="section-title fw-bold mb-3">Expert Industrial Construction Builders in Hosur & Bangalore</h5>
+        <p>
+        At Creissant Construction, we specialize in crafting high-quality Industrial spaces tailored to your vision and lifestyle. Whether you're building a dream home, an elegant villa, or a modern apartment, our team delivers every project with unmatched precision, professionalism, and care.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="col-lg-6 about-gallery d-flex justify-content-center align-items-center">
+        <img src="image/white-concrete-building-with-balconies.jpg" alt="Modern residential construction project in Hosur" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="industries-section py-5">
+  <div class="container">
+<div class="section-head">
+  <h2 class="section-title">Creissant Commercial Construction — Building Spaces for Business Success</h2>
+  <p>Comprehensive Commercial Construction Solutions Designed for Performance, Durability, and Growth</p>
+</div>
+    <div class="row g-4">
+
+      <!-- Card 1: Office Spaces -->
+      <div class="col-md-4">
+        <div class="industry-card h-100 shadow-sm">
+          <img src="image/modern-business-center.jpg" class="industry-card-img" alt="Modern Office Building">
+          <div class="industry-card-body">
+            <h5 class="industry-card-title">Office Spaces</h5>
+            <p class="industry-card-text">
+              We design and construct functional, modern office buildings that promote productivity and reflect your brand identity, tailored to your business needs.
+            </p>
+          </div>
+          <div class="industry-card-footer">
+            <a href="#" class="industry-card-btn btn btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Retail Complexes -->
+      <div class="col-md-4">
+        <div class="industry-card h-100 shadow-sm">
+          <img src="image/mall-america-scenes-cinematic-style.jpg" class="industry-card-img" alt="Retail Shopping Center">
+          <div class="industry-card-body">
+            <h5 class="industry-card-title">Retail Complexes</h5>
+            <p class="industry-card-text">
+              From shopping malls to standalone stores, we deliver visually appealing and customer-friendly retail spaces that ensure maximum footfall and efficiency.
+            </p>
+          </div>
+          <div class="industry-card-footer">
+            <a href="#" class="industry-card-btn btn btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Hospitality Projects -->
+      <div class="col-md-4">
+        <div class="industry-card h-100 shadow-sm">
+          <img src="image/swimming-pool.jpg" class="industry-card-img" alt="Hotel or Hospitality Building">
+          <div class="industry-card-body">
+            <h5 class="industry-card-title">Hotels & Hospitality</h5>
+            <p class="industry-card-text">
+              We create elegant, durable hospitality spaces including hotels, resorts, and guest houses that focus on comfort, aesthetics, and operational flow.
+            </p>
+          </div>
+          <div class="industry-card-footer">
+            <a href="#" class="industry-card-btn btn btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="container pt-5">
+  <div class="section-head text-center mb-5">
+  <h2 class="section-title">Creissant Commercial Construction — Building Spaces for Business Success</h2>
+  <p>Comprehensive Commercial Construction Solutions Designed for Performance, Durability, and Growth</p>
+</div>
+</div>
+<section class="construction-carousel-section pb-5">
+  <div class="container position-relative">
+    <div class="owl-carousel owl-theme">
+
+      <div class="construction-card bg-1 text-white text-center p-4">
+        <div class="construction-icon-wrap mx-auto mb-3">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h5 class="construction-title">Sustainable Design</h5>
+        <p class="construction-description">Eco-friendly and technologically integrated designs that promote environmental sustainability.</p>
+        <ul class="construction-points text-start">
+          <li><i class="fas fa-leaf"></i> Green Construction</li>
+          <li><i class="fas fa-bolt"></i> Energy Efficiency</li>
+          <li><i class="fas fa-certificate"></i> LEED Compliance</li>
+        </ul>
+      </div>
+
+      <div class="construction-card bg-2 text-white text-center p-4">
+        <div class="construction-icon-wrap mx-auto mb-3">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h5 class="construction-title">On-Time Delivery</h5>
+        <p class="construction-description">Guaranteed project delivery within the promised timeline through expert scheduling.</p>
+        <ul class="construction-points text-start">
+          <li><i class="fas fa-calendar-alt"></i> Smart Scheduling</li>
+          <li><i class="fas fa-hourglass-half"></i> Deadline-Oriented</li>
+          <li><i class="fas fa-chart-line"></i> Progress Tracking</li>
+        </ul>
+      </div>
+
+      <div class="construction-card bg-3 text-white text-center p-4">
+        <div class="construction-icon-wrap mx-auto mb-3">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h5 class="construction-title">Communication Systems</h5>
+        <p class="construction-description">Clear and efficient communication with clients and internal teams at all phases.</p>
+        <ul class="construction-points text-start">
+          <li><i class="fas fa-user-friends"></i> Client Transparency</li>
+          <li><i class="fas fa-handshake"></i> Team Collaboration</li>
+          <li><i class="fas fa-bullhorn"></i> Real-time Updates</li>
+        </ul>
+      </div>
+
+      <div class="construction-card bg-4 text-white text-center p-4">
+        <div class="construction-icon-wrap mx-auto mb-3">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h5 class="construction-title">Quality & Safety</h5>
+        <p class="construction-description">Licensed professionals ensure best-in-class construction quality and workplace safety.</p>
+        <ul class="construction-points text-start">
+          <li><i class="fas fa-award"></i> ISO Standards</li>
+          <li><i class="fas fa-hard-hat"></i> Workplace Safety</li>
+          <li><i class="fas fa-check-circle"></i> Quality Checks</li>
+        </ul>
+      </div>
+
+      <div class="construction-card bg-5 text-white text-center p-4">
+        <div class="construction-icon-wrap mx-auto mb-3">
+          <i class="fas fa-hand-holding-usd"></i>
+        </div>
+        <h5 class="construction-title">Customer Value</h5>
+        <p class="construction-description">Transparent pricing and commitment to full value for your investment.</p>
+        <ul class="construction-points text-start">
+          <li><i class="fas fa-receipt"></i> No Hidden Charges</li>
+          <li><i class="fas fa-coins"></i> Full ROI</li>
+          <li><i class="fas fa-smile"></i> Client Satisfaction</li>
+        </ul>
+      </div>
+
+      <div class="construction-card bg-6 text-white text-center p-4">
+        <div class="construction-icon-wrap mx-auto mb-3">
+          <i class="fas fa-users-cog"></i>
+        </div>
+        <h5 class="construction-title">Dedicated Team</h5>
+        <p class="construction-description">Over 986 skilled professionals across all domains of construction and management.</p>
+        <ul class="construction-points text-start">
+          <li><i class="fas fa-user-tie"></i> Experienced Engineers</li>
+          <li><i class="fas fa-tools"></i> Multi-Domain Experts</li>
+          <li><i class="fas fa-headset"></i> 24/7 Availability</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="projects-section">
+  <div class="container">
+    <div class="section-head mb-5">
+      <h2 class="section-title">Commercial Construction Projects</h2>
+      <p class="text-muted">Our top commercial developments</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="image/glass-dome.jpg" alt="Project 1">
+          <div class="project-overlay">
+            <div class="project-title">Skyline Business Tower</div>
+            <div class="project-desc">26-floor commercial tower with premium office and conference space.</div>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="image/building-with-colorful-walls.jpg" alt="Project 2">
+          <div class="project-overlay">
+            <div class="project-title">Metro Corporate Hub</div>
+            <div class="project-desc">LEED-certified corporate complex with tech-enabled infrastructure.</div>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="image/urban-landscape-skyscraper-japan.jpg" alt="Project 3">
+          <div class="project-overlay">
+            <div class="project-title">Urban Plaza</div>
+            <div class="project-desc">A modern shopping and office center in the heart of the city.</div>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="commercial-hero">
+  <div class="commercial-overlay"></div>
+  <div class="container commercial-hero-content text-white">
+    <h2 class="fw-bold">Expert Commercial Construction Services for Your Business Growth</h2>
+    <p class="lead mb-4">From concept to completion, we build efficient, scalable, and future-ready spaces.</p>
+    <div>
+      <a href="#contact" class="btn btn-red me-2">Request a Quote</a>
+
+    </div>
+  </div>
+</section>
 
 <!-- footer -->
 <footer class="footer-section  text-lg-start text-white">
@@ -165,16 +418,35 @@
 </footer>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script>
-  const servicesLink = document.getElementById('navbarDropdown');
-  servicesLink.addEventListener('click', function(e) {
-    // Only navigate if no dropdown menu item is clicked
-    if (!e.target.closest('.dropdown-menu')) {
-      window.location.href = 'service.html';
-    }
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 3,
+      margin: 20,
+      loop: true,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000, // 3 seconds
+      autoplayHoverPause: true,
+      responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1024: { items: 3 }
+      },
+      navText: [
+        '<span class="nav-circle"><i class="fas fa-chevron-left"></i></span>',
+        '<span class="nav-circle"><i class="fas fa-chevron-right"></i></span>'
+      ]
+    });
   });
 </script>
+
 
 
 <!-- Bootstrap JS -->

@@ -43,6 +43,7 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
+        <a href =service.html>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
@@ -54,6 +55,7 @@
             <li><a class="dropdown-item" href="commercial.html">Commercial Construction</a></li>
           </ul>
         </li>
+        </a>
         <li class="nav-item">
           <a class="nav-link" href="#">Gallery</a>
         </li>
@@ -83,6 +85,7 @@
     </div>
   </div>
 </nav>
+
 
 
 <!-- about -->
@@ -518,15 +521,7 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const servicesLink = document.getElementById('navbarDropdown');
-  servicesLink.addEventListener('click', function(e) {
-    // Only navigate if no dropdown menu item is clicked
-    if (!e.target.closest('.dropdown-menu')) {
-      window.location.href = 'service.html';
-    }
-  });
-</script>
+
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -44,6 +44,7 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
+        <a href =service.html>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
@@ -55,6 +56,7 @@
             <li><a class="dropdown-item" href="commercial.html">Commercial Construction</a></li>
           </ul>
         </li>
+        </a>
         <li class="nav-item">
           <a class="nav-link" href="#">Gallery</a>
         </li>
@@ -100,65 +102,7 @@
 </section>
 <h1 class="l-title">Our Services</h1>
 
-<div class="car">
-  <div class="slider">
-    <ul>
-      <li>
-        <input type="radio" name="slide"   id="slide1" checked="checked">
-        <div class="slide">
-          <div class="left left-face">
-            <img src="image/modernbuildingconstruction.jpg">
-          </div>
-          <div class="right right-face">
-            <div class="content">
-              <h2>Residential Construction</h2>
-              <p>
-                We build beautiful, durable homes designed for comfort and modern living. Whether it’s a single-family home, an apartment complex, or a luxury villa, we deliver craftsmanship and attention to detail every step of the way.
-              </p>
-              <a href="residential.html" class="read-more-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-      </li>
 
-      <li>
-        <input type="radio" name="slide" id="slide2">
-        <div class="slide">
-          <div class="left left-face">
-            <img src="image/constructionsite.jpg">
-          </div>
-          <div class="right right-face">
-            <div class="content">
-              <h2>Commercial Construction</h2>
-              <p>
-                From office spaces to retail outlets and large shopping complexes, we create functional, aesthetic commercial environments to help your business thrive. On time, on budget, and built to impress.
-              </p>
-              <a href="commercial.html" class="read-more-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <input type="radio" name="slide"  id="slide3">
-        <div class="slide">
-          <div class="left left-face">
-            <img src="image/illustrationconstructionsite.jpg">
-          </div>
-          <div class="right right-face">
-            <div class="content">
-              <h2>Industrial Construction</h2>
-              <p>
-                We specialize in constructing robust industrial facilities including factories, warehouses, and distribution centers. Our projects are designed with efficiency, scalability, and safety at the core.
-              </p>
-              <a href="industrial.html" class="read-more-btn">Read More</a>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
 
 
 
@@ -171,7 +115,7 @@
         <p class="card__excerpt">
           Innovative spaces designed for thriving businesses and vibrant communities.
         </p>
-        <a href="#" class="card__link">See more</a>
+        <a href="commercial.html" class="card__link">See more</a>
       </div>
     </div>
   </div>
@@ -184,7 +128,7 @@
         <p class="card__excerpt">
           Luxurious, sustainable residential projects tailored for modern living.
         </p>
-        <a href="#" class="card__link">See more</a>
+        <a href="residential.html" class="card__link">See more</a>
       </div>
     </div>
   </div>
@@ -197,7 +141,7 @@
         <p class="card__excerpt">
           Large-scale industrial projects with robust engineering and efficiency.
         </p>
-        <a href="#" class="card__link">See more</a>
+        <a href="industrial.html" class="card__link">See more</a>
       </div>
     </div>
   </div>
@@ -505,31 +449,6 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const servicesLink = document.getElementById('navbarDropdown');
-  servicesLink.addEventListener('click', function(e) {
-    // Only navigate if no dropdown menu item is clicked
-    if (!e.target.closest('.dropdown-menu')) {
-      window.location.href = 'service.html';
-    }
-  });
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll('ul li input[type="radio"]');
-  let current = 0;
-
-  setInterval(() => {
-    slides[current].checked = false; // uncheck current
-    current = (current + 1) % slides.length; // next index
-    slides[current].checked = true;  // check next
-  }, 4000); // change slide every 4 seconds
-});
-
-
-
-</script>
 
 <script>
 document.querySelectorAll(".faq-question").forEach(button => {
@@ -552,8 +471,6 @@ document.querySelectorAll(".faq-question").forEach(button => {
     }
   });
 });
-
-
 
 </script>
 
