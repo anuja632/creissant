@@ -1,20 +1,19 @@
+// window.addEventListener("load", function () {
+//   document.body.classList.add("loaded");
+// });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.nav-item.dropdown > .nav-link').forEach(function (dropdownLink) {
-      dropdownLink.addEventListener('click', function (e) {
-        const isDropdownShown = this.nextElementSibling?.classList.contains('show');
-        const href = this.getAttribute('href');
-
-        // If dropdown isn't already open, navigate (i.e., treat like a regular link)
-        if (!isDropdownShown && href && href !== '#') {
-          e.preventDefault(); // Prevent Bootstrap dropdown from opening
-          window.location.href = href;
-        }
-        // Otherwise, let Bootstrap handle the dropdown toggle
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.nav-item.dropdown > .nav-link').forEach(function (dropdownLink) {
+    dropdownLink.addEventListener('click', function (e) {
+      const isDropdownShown = this.nextElementSibling?.classList.contains('show');
+      const href = this.getAttribute('href');
+      if (!isDropdownShown && href && href !== '#') {
+        e.preventDefault();
+        window.location.href = href;
+      }
     });
   });
-
+});
 
 // Select DOM elements
 const nextBtn = document.querySelector(".next");
@@ -25,14 +24,15 @@ const items = Array.from(document.querySelectorAll(".item"));
 const runningTimeBar = document.querySelector(".carousel .timeRunning");
 
 // Timing configurations
-const TIME_RUNNING = 1500; // Animation duration for the transition
-const TIME_AUTO_NEXT = 3500; // Auto-slide duration
+const TIME_RUNNING = 1500; // Animation duration
+const TIME_AUTO_NEXT = 3500; // Auto-slide interval
 
-// Initialize timeout variables
+// Timeout and animation state
 let transitionTimeout;
 let autoNextTimeout;
+let isAnimating = false; // Prevent spam clicks
 
-// Create and append the progress bar
+// Create and append progress bar
 const arrowsDiv = document.querySelector(".arrows");
 const progressBarContainer = document.createElement("div");
 progressBarContainer.className = "progress-bar-container";
@@ -43,65 +43,62 @@ progressBar.className = "progress-bar";
 progressBarContainer.appendChild(progressBar);
 arrowsDiv.appendChild(progressBarContainer);
 
-// Event listeners for navigation buttons
-nextBtn.addEventListener("click", () => handleSliderNavigation("next"));
-prevBtn.addEventListener("click", () => handleSliderNavigation("prev"));
-
-// Add attribute to each item
+// Add data-item attributes
 items.forEach((item, index) => {
   item.querySelector(".title").setAttribute("data-item", index + 1);
 });
 
-// Automatically navigate to the next slide
+// Event listeners
+nextBtn.addEventListener("click", () => handleSliderNavigation("next"));
+prevBtn.addEventListener("click", () => handleSliderNavigation("prev"));
+
+// Start auto-slide
 autoNextTimeout = setTimeout(() => {
   nextBtn.click();
 }, TIME_AUTO_NEXT);
 
-// Start the initial running time animation and progress bar
+// Initial animation and slide state
 resetAnimation();
 afterSlideChange();
 
-// Resets the running time animation
+// ==== Function Definitions ====
+
 function resetAnimation() {
-  runningTimeBar.style.animation = "none"; // Remove current animation
-  runningTimeBar.offsetHeight; // Trigger reflow to restart animation
-  runningTimeBar.style.animation = `runningTime ${
-    TIME_AUTO_NEXT / 1000
-  }s linear forwards`; // Restart animation
+  runningTimeBar.style.animation = "none";
+  runningTimeBar.offsetHeight; // Trigger reflow
+  runningTimeBar.style.animation = `runningTime ${TIME_AUTO_NEXT / 1000}s linear forwards`;
 }
 
-// Handles slider navigation (next/prev)
 function handleSliderNavigation(direction) {
-  const sliderItems = list.querySelectorAll(".item"); // Get all current items in the list
+  if (isAnimating) return; // Prevent rapid clicks
+  isAnimating = true;
+
+  const sliderItems = list.querySelectorAll(".item");
 
   if (direction === "next") {
-    list.appendChild(sliderItems[0]); // Move the first item to the end of the list
-    carousel.classList.add("next"); // Add the "next" class for transition
+    list.appendChild(sliderItems[0]);
+    carousel.classList.add("next");
   } else if (direction === "prev") {
-    list.prepend(sliderItems[sliderItems.length - 1]); // Move the last item to the start of the list
-    carousel.classList.add("prev"); // Add the "prev" class for transition
+    list.prepend(sliderItems[sliderItems.length - 1]);
+    carousel.classList.add("prev");
   }
 
-  afterSlideChange(); // Log the active slide index
+  afterSlideChange();
 }
 
-// Logs the current active slide's original index
 function afterSlideChange() {
   const slideNumberElement = document.querySelector(".slide-number");
   if (slideNumberElement) slideNumberElement.remove();
 
-  const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
+  const sliderItems = Array.from(list.querySelectorAll(".item"));
   const activeItem = parseInt(
     sliderItems[1].querySelector(".title").getAttribute("data-item")
-  ); // The first visible item is the active one
-
-  const activeIndex =
-    activeItem < 10 ? `0${activeItem}` : activeItem.toString();
+  );
+  const activeIndex = activeItem < 10 ? `0${activeItem}` : activeItem.toString();
 
   const div = document.createElement("div");
   div.classList.add("slide-number");
   div.textContent = `${activeIndex}/${sliderItems.length}`;
-
   arrowsDiv.appendChild(div);
 
   console.log(`Current active slide original index: ${activeIndex}`);
@@ -110,46 +107,40 @@ function afterSlideChange() {
   resetCarouselState();
 }
 
-// Updates the progress bar based on the active slide index
 function updateProgressBar() {
   const totalSlides = items.length;
+  const sliderItems = Array.from(list.querySelectorAll(".item"));
+  const activeItem = parseInt(
+    sliderItems[1].querySelector(".title").getAttribute("data-item")
+  );
 
-  const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
-  const activeItem = parseInt(sliderItems[0].querySelector(".title").getAttribute("data-item")) + 1; // The first visible item is the active one
-
-  const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
-  progressBar.style.width = `${progressPercentage}%`; // Update the progress bar's width
+  const progressPercentage = (activeItem / totalSlides) * 100;
+  progressBar.style.width = `${progressPercentage}%`;
 }
 
-// Resets the carousel state after navigation
 function resetCarouselState() {
-  // Clear existing timeouts for transitions and auto-slide
   clearTimeout(transitionTimeout);
   clearTimeout(autoNextTimeout);
 
-  // Remove the transition class after the animation duration
   transitionTimeout = setTimeout(() => {
     carousel.classList.remove("next");
     carousel.classList.remove("prev");
+    isAnimating = false;
   }, TIME_RUNNING);
 
-  // Restart the auto-slide timer
   autoNextTimeout = setTimeout(() => {
     nextBtn.click();
   }, TIME_AUTO_NEXT);
 
-  // Reset the running time bar animation
   resetAnimation();
 }
-
-
 
  
  const teamData = [
     {
       name: "Ralph Edwards",
       role: "Junior Worker",
-      desc: "Ralph is a dedicated junior technician with 3 years of on-site experience. He focuses on structural inspections and team coordination.",
+      desc: "We adhere to strict quality control and use premium materials. Each member of our team brings specialized expertise, ensuring flawless execution and a seamless construction experience.",
       image: "image/team1.avif"
     },
     {
@@ -201,7 +192,5 @@ const observer = new IntersectionObserver(entries => {
 reasons.forEach(reason => {
   observer.observe(reason);
 });
-
-
 
 
