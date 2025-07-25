@@ -12,6 +12,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+<!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -175,7 +178,7 @@
 
 
 <!-- About Us Section -->
-<section class="about-us-section mt-4 bg-light">
+<section class="about-us-section mt-4 bg-light" data-aos="fade-up">
   <div class="container">
     <div class="row g-0 align-items-stretch">
       
@@ -198,7 +201,7 @@
       </div>
 
       <!-- Image column -->
-      <div class="col-lg-6 d-flex">
+      <div class="col-lg-6 d-flex" data-aos="fade-left">
         <img 
           src="image/about.webp"
           alt="Creissant BuildPro Hosur Construction Site"
@@ -212,10 +215,18 @@
 
 <!-- services -->
 <div class="container py-5">
+      <div class="section-head text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title" data-aos="fade-down" data-aos-delay="100">
+        Our Core Construction Services
+      </h2>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Reliable, high-quality construction solutions tailored for residential, industrial, and commercial excellence.
+      </p>
+    </div>
   <div class="row g-4">
     
     <!-- Residential -->
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
       <div class="wave-card">
         <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?fit=crop&w=600&h=400" alt="Residential Construction">
         <h5>Residential Construction</h5>
@@ -224,7 +235,7 @@
     </div>
 
     <!-- Industrial -->
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
       <div class="wave-card wave-card-industrial">
         <img src="image/industrial.jpg" alt="Industrial Construction">
         <h5>Industrial Construction</h5>
@@ -233,7 +244,7 @@
     </div>
 
     <!-- Commercial -->
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
       <div class="wave-card">
         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fit=crop&w=600&h=400" alt="Commercial Construction">
         <h5>Commercial Construction</h5>
@@ -245,11 +256,10 @@
 </div>
 
 <!-- Why Choose Section -->
-<section class="container py-5">
-  <div class="text-center mb-4">
+<section class="container py-5" id="why-choose">
+  <div class="text-center mb-4" data-aos="fade-up">
     <h2>
       Why Choose <span style="color: rgb(102, 195, 105);">Creissant</span> for Your
-      <!-- <br> -->
       Residential Construction Dreams in Hosur and Bangalore?
     </h2>
     <p class="text-muted">
@@ -258,9 +268,10 @@
   </div>
 
   <div class="row g-4 align-items-center">
+    
     <!-- Left column -->
-    <div class="col-lg-4 d-flex flex-column gap-3">
-      <div class="feature-box d-flex">
+    <div class="col-lg-4 d-flex flex-column gap-3" data-aos="fade-right">
+      <div class="feature-box d-flex" data-aos="fade-right" data-aos-delay="100">
         <div class="feature-icon me-3"><i class="fa-solid fa-gear"></i></div>
         <div>
           <div class="feature-title">Skilled Craftsmanship</div>
@@ -269,7 +280,7 @@
           </div>
         </div>
       </div>
-      <div class="feature-box d-flex">
+      <div class="feature-box d-flex" data-aos="fade-right" data-aos-delay="200">
         <div class="feature-icon me-3"><i class="fa-solid fa-screwdriver-wrench"></i></div>
         <div>
           <div class="feature-title">End-to-End Service</div>
@@ -278,7 +289,7 @@
           </div>
         </div>
       </div>
-      <div class="feature-box d-flex">
+      <div class="feature-box d-flex" data-aos="fade-right" data-aos-delay="300">
         <div class="feature-icon me-3"><i class="fa-regular fa-clock"></i></div>
         <div>
           <div class="feature-title">Real-Time Updates</div>
@@ -290,13 +301,13 @@
     </div>
 
     <!-- Center image -->
-    <div class="col-lg-4 text-center">
+    <div class="col-lg-4 text-center" data-aos="zoom-in" data-aos-delay="150">
       <img src="image/banner.gif" alt="Construction" class="img-fluid">
     </div>
 
     <!-- Right column -->
-    <div class="col-lg-4 d-flex flex-column gap-3">
-      <div class="feature-box d-flex">
+    <div class="col-lg-4 d-flex flex-column gap-3" data-aos="fade-left">
+      <div class="feature-box d-flex" data-aos="fade-left" data-aos-delay="100">
         <div class="feature-icon me-3"><i class="fa-solid fa-truck"></i></div>
         <div>
           <div class="feature-title">On-Time Delivery</div>
@@ -305,7 +316,7 @@
           </div>
         </div>
       </div>
-      <div class="feature-box d-flex">
+      <div class="feature-box d-flex" data-aos="fade-left" data-aos-delay="200">
         <div class="feature-icon me-3"><i class="fa-solid fa-users"></i></div>
         <div>
           <div class="feature-title">Personalized Approach</div>
@@ -314,7 +325,7 @@
           </div>
         </div>
       </div>
-      <div class="feature-box d-flex">
+      <div class="feature-box d-flex" data-aos="fade-left" data-aos-delay="300">
         <div class="feature-icon me-3"><i class="fa-regular fa-comments"></i></div>
         <div>
           <div class="feature-title">Transparent Communication</div>
@@ -324,14 +335,18 @@
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
+
 <!-- cta action -->
-<div class="main bg-image">
+<div class="main bg-image" data-aos="fade-in">
   <div class="container py-5">
     <div class="row align-items-center">
-      <div class="col-lg-8">
+      
+      <!-- Left Column -->
+      <div class="col-lg-8" data-aos="fade-right">
         <h1 class="fw-bold">
           Hosur & Bangalore’s Trusted Residential Builders —  
           <span class="highlight">Wellness, Crafted by Creissant</span>
@@ -340,140 +355,153 @@
           <strong>Bringing Dreams to Life in Hosur & Bangalore</strong>
         </p>
         <p>
-          At <strong>Creissant</strong>, we believe every home should feel like a sanctuary — warm, welcoming, and thoughtfully designed. As a trusted name in residential construction across Hosur and Bangalore, we specialize in crafting homes with care, tailored to your lifestyle.
+          At <strong>Creissant</strong>, we believe every home should feel like a sanctuary — warm, welcoming, and thoughtfully designed...
         </p>
         <p>
-          Whether it’s a serene villa in nature or a modern apartment in the city, our expert architects, engineers, and craftsmen bring your vision to life with precision and passion.
+          Whether it’s a serene villa in nature or a modern apartment in the city...
         </p>
         <p>
-          Our philosophy is simple: build with strength, design with soul, and nurture relationships that stand as firmly as our walls. With Creissant, expect transparency, timeless quality, and a building journey as seamless and satisfying as our name suggests — smooth, layered, and crafted to perfection.
+          Our philosophy is simple: build with strength, design with soul, and nurture relationships...
         </p>
       </div>
-      <div class="col-lg-4 mt-4 mt-md-0">
-        <div class="side-box text-center">
+
+      <!-- Right Column -->
+      <div class="col-lg-4 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="side-box text-center p-4 shadow-sm bg-white rounded">
           <h4>Let’s Build Your Dream in Hosur</h4>
           <p class="mt-2">Your journey starts here.</p>
-          <a href="https://wa.me/ +919364311991" class="btn btn-light mt-3">
+          <a href="https://wa.me/+919364311991" class="btn btn-light mt-3">
             Book a Consultation 
             <img src="https://img.icons8.com/color/20/000000/whatsapp.png" alt="WhatsApp">
           </a>
         </div>
       </div>
+
     </div>
   </div>
 </div>
+
 
 
 
 <!-- transform -->
 <div class="container">
-<section class="section-wrap">
-  <!-- Background Blueprint Image -->
-  <img src="image/counter.webp" alt="Blueprint" class="background-architect">
+  <section class="section-wrap position-relative" data-aos="fade-up">
+    
+    <!-- Background Blueprint Image -->
+    <img src="image/counter.webp" alt="Blueprint" class="background-architect position-absolute top-0 start-0 w-100 h-100" style="z-index: -1; opacity: 0.1;">
 
-  <div class="row align-items-center">
-    <!-- Left: Collage -->
-    <div class="col-lg-6 mb-4 mb-lg-0">
-      <div class="image-collage">
-        <img src="image/main1.avif" alt="Interior 1" class="collage-img img-1">
-        <img src="image/main2.avif" alt="Interior 2" class="collage-img img-2">
-        <img src="image/main3.avif" alt="Interior 3" class="collage-img img-3">
+    <div class="row align-items-center">
+      
+      <!-- Left: Collage -->
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in-right">
+        <div class="image-collage">
+          <img src="image/main1.avif" alt="Interior 1" class="collage-img img-1">
+          <img src="image/main2.avif" alt="Interior 2" class="collage-img img-2">
+          <img src="image/main3.avif" alt="Interior 3" class="collage-img img-3">
+        </div>
       </div>
+
+      <!-- Right: Text Content -->
+      <div class="col-lg-6 right-content" data-aos="fade-left" data-aos-delay="100">
+        <h2 class="mb-3">
+          Elevate Your Home in Hosur with<br>
+          <span class="highlight">Thoughtful Interior Design</span>
+        </h2>
+        <p class="mb-4">
+          At <strong>Creissant</strong>, our team brings together creativity and functionality to craft interiors that feel truly like home — tailored to your lifestyle and taste.
+        </p>
+
+        <h5 class="highlight mb-4" data-aos="fade-left" data-aos-delay="200">
+          Building Spaces That Inspire & Endure
+        </h5>
+
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <div class="feature-text">
+            <h6>Tailored to You</h6>
+            <p>Every design reflects your unique personality and needs.</p>
+          </div>
+        </div>
+
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+          <div class="feature-text">
+            <h6>Expert Team</h6>
+            <p>Our designers and engineers deliver interiors that are both elegant and practical.</p>
+          </div>
+        </div>
+
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon"><i class="fas fa-box-open"></i></div>
+          <div class="feature-text">
+            <h6>Complete Solutions</h6>
+            <p>From the first idea to final handover — we take care of it all.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <!-- Right: Text Content -->
-    <div class="col-lg-6 right-content">
-      <h2 class="mb-3">Elevate Your Home in Hosur with<br>
-        <span class="highlight">Thoughtful Interior Design</span>
-      </h2>
-      <p class="mb-4">
-        At <strong>Creissant</strong>, our team brings together creativity and functionality to craft interiors that feel truly like home — tailored to your lifestyle and taste.
-      </p>
-
-      <h5 class="highlight mb-4">Building Spaces That Inspire & Endure</h5>
-
-      <div class="feature-box">
-        <div class="feature-icon"><i class="fas fa-pencil-ruler"></i></div>
-        <div class="feature-text">
-          <h6>Tailored to You</h6>
-          <p>Every design reflects your unique personality and needs.</p>
-        </div>
-      </div>
-
-      <div class="feature-box">
-        <div class="feature-icon"><i class="fas fa-user-check"></i></div>
-        <div class="feature-text">
-          <h6>Expert Team</h6>
-          <p>Our designers and engineers deliver interiors that are both elegant and practical.</p>
-        </div>
-      </div>
-
-      <div class="feature-box">
-        <div class="feature-icon"><i class="fas fa-box-open"></i></div>
-        <div class="feature-text">
-          <h6>Complete Solutions</h6>
-          <p>From the first idea to final handover — we take care of it all.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 </div>
-
-<section class="construction-process">
-  <div class="section-heading">
+<section class="construction-process py-5" data-aos="fade-up">
+  
+  <!-- Section Heading -->
+  <div class="section-heading text-center mb-4" data-aos="fade-down">
     <h2>The <span>Creissant Construction Journey</span></h2>
     <p>Turning Vision into Reality — A Seamless, Professional Approach</p>
   </div>
 
-  <!-- SVG Wavy Line (Long & Smooth) -->
-  <svg class="wave-line" viewBox="0 0 1200 150" preserveAspectRatio="none">
-    <path d="M0,100 Q150,65 300,100 T600,100 T900,100 T1200,5" />
+  <!-- SVG Wavy Line -->
+  <svg class="wave-line mb-4" viewBox="0 0 1200 150" preserveAspectRatio="none" data-aos="zoom-in" data-aos-delay="100">
+    <path d="M0,100 Q150,65 300,100 T600,100 T900,100 T1200,5" stroke="currentColor" fill="none" stroke-width="3" />
   </svg>
 
-  <!-- Step Items -->
-  <div class="step-container">
+  <!-- Steps -->
+  <div class="step-container d-flex justify-content-between flex-wrap">
+    
     <!-- Step 1 -->
-    <div class="step">
+    <div class="step text-center" data-aos="fade-up" data-aos-delay="100">
       <div class="step-icon"><i class="fas fa-map-marked-alt"></i></div>
       <div class="step-label">Site Evaluation & Feasibility</div>
     </div>
 
     <!-- Step 2 -->
-    <div class="step">
+    <div class="step text-center" data-aos="fade-up" data-aos-delay="200">
       <div class="step-icon"><i class="fas fa-drafting-compass"></i></div>
       <div class="step-label">Customized Architectural Design</div>
     </div>
 
     <!-- Step 3 -->
-    <div class="step">
+    <div class="step text-center" data-aos="fade-up" data-aos-delay="300">
       <div class="step-icon"><i class="fas fa-truck-loading"></i></div>
       <div class="step-label">Premium Material Selection</div>
     </div>
 
     <!-- Step 4 -->
-    <div class="step">
+    <div class="step text-center" data-aos="fade-up" data-aos-delay="400">
       <div class="step-icon"><i class="fas fa-tools"></i></div>
       <div class="step-label">Precision-led Construction</div>
     </div>
 
     <!-- Step 5 -->
-    <div class="step">
+    <div class="step text-center" data-aos="fade-up" data-aos-delay="500">
       <div class="step-icon"><i class="fas fa-check-circle"></i></div>
       <div class="step-label">Final Handover & Client Satisfaction</div>
     </div>
+
   </div>
 </section>
 
 
-<section class="faq-section">
-  <div class="container">
-    <h2 class="faq-title"> Frequently Asked Questions</h2>
+<!-- FAQ Section -->
+<section class="faq-section py-5" id="faq">
+  <div class="container" data-aos="fade-up">
+    <h2 class="faq-title mb-4" data-aos="fade-down">Frequently Asked Questions</h2>
 
     <div class="accordion" id="faqAccordion">
-
       <!-- FAQ 1 -->
-      <div class="accordion-item">
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
         <h2 class="accordion-header" id="faq1">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true">
             What services do you offer in construction?
@@ -487,7 +515,7 @@
       </div>
 
       <!-- FAQ 2 -->
-      <div class="accordion-item">
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
         <h2 class="accordion-header" id="faq2">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
             Do you handle both residential and commercial projects?
@@ -501,7 +529,7 @@
       </div>
 
       <!-- FAQ 3 -->
-      <div class="accordion-item">
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
         <h2 class="accordion-header" id="faq3">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
             How long does a typical project take to complete?
@@ -515,7 +543,7 @@
       </div>
 
       <!-- FAQ 4 -->
-      <div class="accordion-item">
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
         <h2 class="accordion-header" id="faq4">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4">
             Do you provide material and labor or just labor?
@@ -529,7 +557,7 @@
       </div>
 
       <!-- FAQ 5 -->
-      <div class="accordion-item">
+      <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
         <h2 class="accordion-header" id="faq5">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5">
             Are your projects supervised by qualified engineers?
@@ -541,16 +569,17 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-<section class="team-section">
+
+<!-- Team Section -->
+<section class="team-section py-5" id="team">
   <div class="container">
     <div class="row align-items-start g-4">
       
       <!-- Left Content -->
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="fade-right">
         <div class="section-titles mb-4">
           <h6 class="text-uppercase text-orange mb-1">
             <i class="fas fa-tools me-2 text-orange"></i>
@@ -563,7 +592,7 @@
         </div>
 
         <!-- Thumbnails -->
-        <div class="d-flex gap-3 team-thumbnails">
+        <div class="d-flex gap-3 team-thumbnails" data-aos="fade-up" data-aos-delay="200">
           <img src="image/team1.avif" alt="Worker 1" class="active" onclick="setProfile(0)">
           <img src="image/team2.avif" alt="Worker 2" onclick="setProfile(1)">
           <img src="image/team3.jpg" alt="Worker 3" onclick="setProfile(2)">
@@ -572,9 +601,9 @@
       </div>
 
       <!-- Right Profile Card -->
-      <div class="col-md-6">
-        <div class="position-relative profile-card">
-          <img src="image/team1.avif" class="profile-image" id="profile-img" />
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="position-relative profile-card p-4 shadow-sm rounded bg-white">
+          <img src="image/team1.avif" class="profile-image mb-3" id="profile-img" />
           <h4 id="profile-name">Ralph Edwards</h4>
           <h6 id="profile-role">Junior Worker</h6>
           <p id="profile-desc">
@@ -585,6 +614,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- footer -->
 <footer class="footer-section text-white pt-5">
@@ -675,5 +705,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="js/script.js"></script>
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+      once: false
+</script>
+
 </body>
 </html>
