@@ -145,6 +145,7 @@ const testimonials = [
                 clearInterval(autoplayInterval);
             });
         });
+        
 
 document.addEventListener("DOMContentLoaded", () => {
   const tabItems = document.querySelectorAll(".construction-journey .tabs li");
@@ -164,38 +165,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".count");
-
-    const animateCount = (el) => {
-      const target = +el.getAttribute("data-count");
-      let count = 0;
-      const step = Math.ceil(target / 100); // Controls speed
-
-      const update = () => {
-        count += step;
-        if (count < target) {
-          el.innerText = count + "+";
-          requestAnimationFrame(update);
-        } else {
-          el.innerText = target + "+";
-        }
-      };
-      update();
-    };
-
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCount(entry.target.querySelector(".count"));
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.6 });
-
-    document.querySelectorAll(".stats-item").forEach(item => observer.observe(item));
-  });
-
-
-

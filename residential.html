@@ -132,7 +132,7 @@ Enjoy hassle-free residential construction services tailored to your needs and b
   </div>
 </section>
 
-<div class="kol bg-body-tertiary">
+<div class="kol bg-body-tertiary pt-5">
 <div class="container mt-4">
   <div class="section-head">
     <h2 class="section-title wow fadeInUp" data-wow-delay="0.1s">
@@ -322,9 +322,7 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
   </div>
 </section>
 
-<section class="stats-section" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+<section class="stats-section">
   <div class="stats-left">
     <img src="image/25.jpg" alt="26 Years of Experience">
     <p class="experience-text">26 Years of Excellence</p>
@@ -332,20 +330,20 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
 
   <div class="stats-box">
     <div class="stat">
-      <h2>30K</h2>
-      <h4>Happy Customer</h4>
+      <h2 class="count" data-target="30" data-format="K">0</h2>
+      <h4>Happy Customers</h4>
     </div>
     <div class="stat">
-      <h2>2K</h2>
-      <h4>Layout Done</h4>
+      <h2 class="count" data-target="2" data-format="K">0</h2>
+      <h4>Layouts Done</h4>
     </div>
     <div class="stat">
-      <h2>227</h2>
+      <h2 class="count" data-target="227">0</h2>
       <h4>Awards</h4>
     </div>
-        <div class="stat">
-      <h2>50</h2>
-      <h4>Project Done</h4>
+    <div class="stat">
+      <h2 class="count" data-target="50">0</h2>
+      <h4>Projects Done</h4>
     </div>
   </div>
 </section>
@@ -470,26 +468,6 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
 
 
 
-<script>
-
-$(document).ready(function(){
-  $("#successCarousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    // dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: { items: 1 },
-      576: { items: 2 },
-      768: { items: 3 },
-      1200: { items: 4 }
-    }
-  });
-});
-</script>
 
 
 
@@ -503,7 +481,7 @@ $(document).ready(function(){
     easing: 'ease-in-out'
   });
 </script>
-
+<script src="js/boot.js"></script>
 </body>
 </html>
 

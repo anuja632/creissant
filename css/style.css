@@ -836,6 +836,19 @@ body {
       font-weight: bold;
       color: #052523;
     }
+    .step:hover {
+  /* Example: change background or apply a subtle shadow */
+  background-color: rgb(102, 195, 105);
+  transition: background-color 0.3s ease;
+  color:white;
+}
+
+.step:hover .circle {
+  background-color: #fff;         /* background becomes white on hover */
+  color: rgb(102, 195, 105);      /* text becomes green on hover */
+  border: 2px solid rgb(102, 195, 105); /* optional green border on hover */
+}
+
 
     .wave-line {
       position: absolute;
@@ -864,6 +877,51 @@ body {
       }
 
     }
+/* Section background with image */
+.miss {
+  background-image: url("../image/bassa.avif");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+    color:white;
+
+}
+
+/* Optional: semi-transparent overlay for contrast */
+.miss::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0, 0.85); /* subtle white overlay */
+  z-index: -1;
+}
+
+/* Info card default styles */
+.info-card {
+  background-color: rgb(255, 255, 255); /* white */
+  color: rgb(33, 37, 41);               /* dark text */
+  padding: 30px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect */
+.info-card:hover {
+  background-color: rgb(102, 195, 105); /* green background */
+  color: rgb(255, 255, 255);            /* white text */
+  transform: translateY(-5px);          /* slight lift effect */
+}
+
+/* Make sure text inside also turns white */
+.info-card:hover h3,
+.info-card:hover p,
+.info-card:hover strong {
+  color: rgb(255, 255, 255);
+}
 
 
         .faq-section {
@@ -1112,9 +1170,10 @@ svg {
 
     .intro-wrapper {
       display: flex;
-      min-height: 100vh;
+      min-height: 50vh;
     }
 
+  
     .intro-left {
       flex: 1;
       background: url('https://nunforest.com/construct/upload/banners/1.jpg') no-repeat center center;
@@ -1169,34 +1228,6 @@ svg {
       color: black;
       line-height: 1.7;
       text-align: justify;
-    }
-
-    .stats-container {
-      display: flex;
-      gap: 40px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
-
-    .stats-item {
-      flex: 1;
-      min-width: 150px;
-      text-align: center;
-    }
-
-    .stats-item .count {
-      color: rgb(102, 195, 105);
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    .stats-item .label {
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .stats-item .subtext {
-      color: black;
     }
 
     @media(max-width: 768px) {
@@ -2221,8 +2252,9 @@ svg {
 
 .about-gallery img {
   border-radius: 12px;
-  height: 250px;
+  /* height: 250px; */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* width:100%; */
 }
 
 
@@ -3446,3 +3478,62 @@ svg {
     font-size: 14px;
   }
 }
+    .ajj {
+      background-image: url("https://nuvonirmaan.com/wp-content/uploads/2022/06/Common-house-construction-myths.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    .ajj::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6); /* dark overlay */
+      z-index: 1;
+    }
+
+    .stats-container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stats-item {
+      flex: 1 1 250px;
+      /* background-color: rgba(255, 255, 255, 0.95); */
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+      color:white;
+      /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+      transition: transform 0.3s ease;
+    }
+
+    .stats-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .stats-item .count {
+color:white;      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .stats-item .label {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color:white;
+    }
+
+    .stats-item .subtext {
+color:white;      font-size: 14px;
+    }
