@@ -9,13 +9,13 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
     margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 
 
 }
@@ -384,7 +384,7 @@ body {
 }
 
 .navbar .nav-link:hover {
-  color: #333;
+  color:black;
 }
 
 .navbar .nav-link.active {
@@ -698,7 +698,7 @@ body {
     .feature-text p {
       margin: 4px 0 0;
       font-size: 0.95rem;
-      color: #444;
+      color:black;
     }
 
     @media (max-width: 992px) {
@@ -773,7 +773,7 @@ body {
 
 
     .construction-process {
-      padding: 60px;
+      padding: 30px;
       position: relative;
       overflow: hidden;
     }
@@ -815,6 +815,8 @@ body {
       align-items: center;
       position: relative;
       text-align: center;
+      height:200px;
+      padding:10px;
     }
 
     .step-icon {
@@ -1289,7 +1291,7 @@ svg {
 .flip-card-back {
   transform: rotateY(180deg);
   background-color: #ffffff;
-  color: #333;
+  color:black;
 }
 
 
@@ -1435,7 +1437,7 @@ svg {
 
     .contact-text {
       font-size: 15px;
-      color: #444;
+      color: black;
       margin: 0;
     }
 
@@ -1872,7 +1874,7 @@ svg {
 }
 .quote {
   font-size: 1.125rem;
-  color: #4b5563;
+  color: black;
   text-align: justify;
   line-height: 1.75;
 }
@@ -1921,7 +1923,9 @@ svg {
 
 #aq{
   padding: 30px 0px;
-  background-image: url('../image/bg.jpg');
+      background-color: #f6e8e8;
+
+  /* background-image: url('../image/bg.jpg'); */
 }
 
 .faq {
@@ -1938,13 +1942,13 @@ svg {
   text-align: center;
   margin-bottom: 30px;
   /* font-size: 2rem; */
-  color: #333;
+  color:black;
 }
 
 .faq h3 {
   margin-top: 30px;
   font-size: 1.5rem;
-  color: #444;
+  color: black;
 }
 
 .faq-item {
@@ -1982,7 +1986,7 @@ svg {
 }
 
 .icon {
-  color: #666;
+  color: black;
   transition: transform 0.3s ease;
 }
 .get-in-touch-banner {
@@ -2112,11 +2116,11 @@ svg {
 .testimonial-carousel .swiper-pagination-bullet {
   background-color: white;
   opacity: 1;
-  border: 1px solid #4361ee;
+  border: 1px solid  rgb(102, 195, 105);
 }
 
 .testimonial-carousel .swiper-pagination-bullet-active {
-  background-color: #4361ee;
+  background-color: rgb(102, 195, 105);
 }
 
 .testimonial-carousel .swiper-button-next,
@@ -2229,7 +2233,7 @@ svg {
   color: black;
 }
 .about-residential {
-  color: #222;
+  color: black;
 }
 
 .about-content .section-subtitle {
@@ -2247,7 +2251,7 @@ svg {
 .about-content p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: black;
 }
 
 .about-gallery img {
@@ -2465,7 +2469,7 @@ svg {
 
 .section-head p {
   font-size: 16px;
-  color: #666;
+  color: black;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -2476,7 +2480,7 @@ svg {
   list-style: none;
   padding: 0;
   margin: 0 0 30px;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid black;
 }
 
 .tabs li {
@@ -2484,7 +2488,7 @@ svg {
   padding: 10px 0;
   cursor: pointer;
   position: relative;
-  color: #333;
+  color: black;
   font-weight: 500;
       font-size: 14px;
 }
@@ -2822,7 +2826,7 @@ svg {
   border-radius: 6px;
   width: 40%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  color: #333;
+  color: black;
 }
 
 
@@ -3035,7 +3039,7 @@ svg {
   border-radius: 12px;
   background-size: cover;
   background-position: center;
-  min-height: 380px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3311,7 +3315,8 @@ svg {
   white-space: nowrap;
   position: relative;
   padding: 30px 0;
-  background: #fff;
+      background-color: #f6e8e8;
+
 }
 
 .logos::before,
@@ -3537,3 +3542,6 @@ color:white;      font-size: 48px;
     .stats-item .subtext {
 color:white;      font-size: 14px;
     }
+
+
+    

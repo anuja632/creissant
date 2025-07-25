@@ -1,48 +1,88 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".count");
 
-   document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".count");
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    const isK = counter.getAttribute("data-format") === "K";
+    let count = 0;
+    const increment = target / 100;
 
-    counters.forEach(counter => {
-      const target = +counter.getAttribute("data-target");
-      let current = 0;
-      const increment = target / 100;
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        counter.textContent = Math.floor(count) + (isK ? "K" : "+");
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target + (isK ? "K" : "+");
+      }
+    };
 
-      const updateCount = () => {
-        current += increment;
-        if (current < target) {
-          counter.textContent = Math.floor(current) + "+";
-          requestAnimationFrame(updateCount);
-        } else {
-          counter.textContent = target + "+";
+    update();
+  };
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          // Reset before animation
+          counter.textContent = "0";
+          animateCounter(counter);
+          // Optional: unobserve if you don't want to repeat
+          // observer.unobserve(counter);
         }
-      };
+      });
+    },
+    { threshold: 0.5 } // triggers when 50% of the counter is visible
+  );
 
-      updateCount();
-    });
-  });
+  counters.forEach(counter => observer.observe(counter));
+});
 
-    document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".count");
+//    document.addEventListener("DOMContentLoaded", () => {
+//     const counters = document.querySelectorAll(".count");
 
-    counters.forEach(counter => {
-      const target = +counter.getAttribute("data-target");
-      const isK = counter.getAttribute("data-format") === "K";
-      let count = 0;
-      const increment = target / 100;
+//     counters.forEach(counter => {
+//       const target = +counter.getAttribute("data-target");
+//       let current = 0;
+//       const increment = target / 100;
+
+//       const updateCount = () => {
+//         current += increment;
+//         if (current < target) {
+//           counter.textContent = Math.floor(current) + "+";
+//           requestAnimationFrame(updateCount);
+//         } else {
+//           counter.textContent = target + "+";
+//         }
+//       };
+
+//       updateCount();
+//     });
+//   });
+
+//     document.addEventListener("DOMContentLoaded", () => {
+//     const counters = document.querySelectorAll(".count");
+
+//     counters.forEach(counter => {
+//       const target = +counter.getAttribute("data-target");
+//       const isK = counter.getAttribute("data-format") === "K";
+//       let count = 0;
+//       const increment = target / 100;
       
-      const update = () => {
-        count += increment;
-        if (count < target) {
-          counter.textContent = Math.floor(count);
-          requestAnimationFrame(update);
-        } else {
-          counter.textContent = isK ? target + "K" : target;
-        }
-      };
+//       const update = () => {
+//         count += increment;
+//         if (count < target) {
+//           counter.textContent = Math.floor(count);
+//           requestAnimationFrame(update);
+//         } else {
+//           counter.textContent = isK ? target + "K" : target;
+//         }
+//       };
 
-      update();
-    });
-  });
+//       update();
+//     });
+//   });
 $(document).ready(function(){
   $("#successCarousel").owlCarousel({
     loop: true,
