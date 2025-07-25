@@ -11,6 +11,7 @@
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -38,14 +39,14 @@
       <!-- Center Nav Links -->
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <a href ="service.html">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link active dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
 
@@ -87,7 +88,7 @@
 <div class="main">
 
 </div>
-<section class="hero-banner">
+<section class="hero-banner" data-aos="fade-down-right">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title">Our Construction Services</h1>
@@ -102,7 +103,7 @@
 
 
 
-<div class="cards-container">
+<div class="cards-container" data-aos="fade-down-right">
 
   <div class="card">
     <img src="image/resdit.avif" alt="Residential">
@@ -152,7 +153,7 @@
       <!-- Wavy line -->
       <img src="https://unicktheme.com/bixola/assets/images/shapes/process-one-shape-1.png" alt="Process line" class="process-line d-none d-md-block">
 
-    <div class="row gy-4">
+    <div class="row gy-4" data-aos="zoom-in-left">
       <!-- Step 1 -->
       <div class="col-md-3 col-sm-6">
         <div class="process-step mx-auto">
@@ -191,7 +192,7 @@
 </section>
 
 
-<section class="get-in-touch-banner text-white text-center py-5" style="background: url('image/bread.jpg') center/cover no-repeat;">
+<section class="get-in-touch-banner text-white text-center py-5" data-aos="zoom-in-right" style="background: url('image/bread.jpg') center/cover no-repeat;">
   <div class="container">
     <h2 class="fw-bold mb-3">Let’s Build Something Amazing Together</h2>
     <p class="mb-4">Whether it’s residential, commercial, or industrial, we’re here to help you bring your vision to life. Contact us today to start your project!</p>
@@ -262,7 +263,7 @@
   </div>
 </div>
 
-<section class="faq">
+<section class="faq" data-aos="fade-up">
   <div class="container">
     <h2>Frequently Asked Questions</h2>
 
@@ -519,7 +520,14 @@ function queryResizer() {
 
 <script src="js/script.js"></script>
 <script src="js/review.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,          // Only animate once
+    duration: 800,       // Animation duration
+    easing: 'ease-in-out'
+  });
+</script>
 </body>
 </html>
 

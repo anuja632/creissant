@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -41,19 +42,19 @@
       <!-- Center Nav Links -->
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link " href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <a href ="service.html">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
 
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="residential.html">Residential Construction</a></li>
+            <li><a class="dropdown-item " href="residential.html">Residential Construction</a></li>
             <li><a class="dropdown-item" href="industrial.html">Industrial Construction</a></li>
             <li><a class="dropdown-item" href="commercial.html">Commercial Construction</a></li>
           </ul>
@@ -108,7 +109,7 @@ Enjoy hassle-free residential construction services tailored to your needs and b
 </section>
 
 
-<section class="about-residential py-5 bg-white text-dark">
+<section class="about-residential py-5 bg-white text-dark" data-aos="zoom-in-right">
   <div class="container about-container">
     <div class="row g-4 align-items-start">
       
@@ -141,7 +142,7 @@ Enjoy hassle-free residential construction services tailored to your needs and b
 Comprehensive Residential Construction Solutions Backed by Quality and Expertise    </h4>
   </div>
 
-  <div class="residential-wrapper hover">
+  <div class="residential-wrapper hover" data-aos="zoom-out-up">
     <ul>
       <li>
         <img src="image/residential-architects.png" alt="Residences by Creissant BuildPro in Hosur and Bangalore">
@@ -198,7 +199,7 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
 
 
 
-<section class="construction-journey">
+<section class="construction-journey" data-aos="zoom-in-up">
   <div class="container">
     <div class="section-head">
       <h2 class="section-title">Creissant Residential Construction — Turning Your Dream Home Into Reality</h2>
@@ -232,7 +233,9 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
   </div>
 </section>
 
-<section class="construction-journey " id="aq" >
+<section class="construction-journey " id="aq" data-aos="fade-down"
+     data-aos-easing="linear"
+     >
 
   <div class="container">
     <div class="section-head">
@@ -319,7 +322,9 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
   </div>
 </section>
 
-<section class="stats-section">
+<section class="stats-section" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
   <div class="stats-left">
     <img src="image/25.jpg" alt="26 Years of Experience">
     <p class="experience-text">26 Years of Excellence</p>
@@ -344,7 +349,8 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
     </div>
   </div>
 </section>
-<section class="section_container py-5 bg-light">
+<section class="section_container py-5 bg-light" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
   <div class="container">
     <div class="section-head mb-4">
       <h2 class="section-title">Success Stories – Our Recent Projects</h2>
@@ -363,7 +369,8 @@ Comprehensive Residential Construction Solutions Backed by Quality and Expertise
 </section>
 
 
-<section class="cta-section">
+<section class="cta-section"data-aos="fade-down"
+     data-aos-anchor-placement="bottom-bottom">
   <div class="container">
     <h2>Let’s Bring Your Dream Home to Life</h2>
     <p>Tell us your vision — we’ll design and build a home that’s uniquely yours.</p>
@@ -488,7 +495,14 @@ $(document).ready(function(){
 
 <script src="js/script.js"></script>
 <script src="js/review.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,          // Only animate once
+    duration: 800,       // Animation duration
+    easing: 'ease-in-out'
+  });
+</script>
 
 </body>
 </html>

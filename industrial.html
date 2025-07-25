@@ -13,6 +13,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -104,7 +105,7 @@ Whether you're setting up a new facility or expanding an existing one, Creissant
 </section>
 
 
-<section class="about-residential py-5 bg-white text-dark">
+<section class="about-residential py-5 bg-white text-dark" data-aos="flip-left">
   <div class="container about-container">
     <div class="row g-4 align-items-start">
       
@@ -145,7 +146,7 @@ At Creissant Build Pro Pvt Ltd, we specialize in delivering robust, high-quality
     </div>
   </div>
 </section> -->
-<section class="construction-journey">
+<section class="construction-journey" data-aos="zoom-in">
   <div class="container">
     <div class="section-head">
       <h2 class="section-title">Creissant Industrial Construction — Building Your Vision with Strength</h2>
@@ -258,7 +259,7 @@ At Creissant Build Pro Pvt Ltd, we specialize in delivering robust, high-quality
 </section>
 
 
-<section class="timeline-section">
+<section class="timeline-section" data-aos="fade-up">
   <div class="container">
 
     <div class="timeline">
@@ -325,7 +326,7 @@ At Creissant Build Pro Pvt Ltd, we specialize in delivering robust, high-quality
   </div>
 </section>
 
-<section class="why-choose-us py-5">
+<section class="why-choose-us py-5" data-aos="zoom-out">
   <div class="container">
     <div class="row justify-content-center mb-5">
       <div class="col-md-10 text-center">
@@ -413,7 +414,7 @@ At Creissant Build Pro Pvt Ltd, we specialize in delivering robust, high-quality
 
 
 
-<section class="industries-section py-5">
+<section class="industries-section py-5" data-aos="zoom-in-down">
   <div class="container">
     <div class="section-head">
     <h2 class="section-title mb-4">Industries We Serve</h2>
@@ -523,7 +524,7 @@ At Creissant Build Pro Pvt Ltd, we specialize in delivering robust, high-quality
 </section>
 
 
-<section class="build-together text-center text-light d-flex align-items-center">
+<section class="build-together text-center text-light d-flex align-items-center" data-aos="zoom-out-down">
   <div class="container">
     <h2 class="fw-bold mb-3">Powering Industrial Growth with Precision Construction.</h2>
     <p class="lead mb-4">
@@ -636,6 +637,14 @@ document.querySelectorAll(".tabs li").forEach(tab => {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/review.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,          // Only animate once
+    duration: 800,       // Animation duration
+    easing: 'ease-in-out'
+  });
+</script>
 
 </body>
 </html>

@@ -14,6 +14,7 @@
 <!-- Owl Carousel CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="css/style.css">
@@ -41,14 +42,14 @@
       <!-- Center Nav Links -->
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link " href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <a href ="service.html">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
 
@@ -105,7 +106,7 @@ Get expert-led commercial construction with a focus on quality, budget control, 
 </section>
 
 
-<section class="about-residential py-5 bg-white text-dark">
+<section class="about-residential py-5 bg-white text-dark" >
   <div class="container about-container">
     <div class="row g-4 align-items-start">
       
@@ -127,7 +128,7 @@ At Creissant Build Bro, we offer expert commercial construction services across 
 </section>
 
 
-<section class="industries-section py-5">
+<section class="industries-section py-5" data-aos="fade-up-left">
   <div class="container">
     <div class="section-head">
       <h2 class="section-title">Creissant Commercial Construction — Building Spaces for Business Success</h2>
@@ -242,7 +243,7 @@ At Creissant Build Bro, we offer expert commercial construction services across 
   <p>Comprehensive Commercial Construction Solutions Designed for Performance, Durability, and Growth</p>
 </div>
 </div>
-<section class="construction-carousel-section pb-5">
+<section class="construction-carousel-section pb-5" data-aos="fade-down-left">
   <div class="container position-relative">
     <div class="owl-carousel owl-theme">
 
@@ -327,7 +328,8 @@ At Creissant Build Bro, we offer expert commercial construction services across 
     </div>
   </div>
 </section>
-<section class="projects-section">
+<section class="projects-section" data-aos="fade-down"
+     data-aos-anchor-placement="bottom-bottom">
   <div class="container">
     <div class="section-head mb-5">
       <h2 class="section-title">Commercial Construction Projects</h2>
@@ -374,7 +376,8 @@ At Creissant Build Bro, we offer expert commercial construction services across 
   </div>
 </section>
 
-<section class="commercial-hero">
+<section class="commercial-hero" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
   <div class="commercial-overlay"></div>
   <div class="container commercial-hero-content text-white">
     <h2 class="fw-bold">Expert Commercial Construction Services for Your Business Growth</h2>
@@ -501,5 +504,13 @@ At Creissant Build Bro, we offer expert commercial construction services across 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,          // Only animate once
+    duration: 800,       // Animation duration
+    easing: 'ease-in-out'
+  });
+</script>
 </body>
 </html>
