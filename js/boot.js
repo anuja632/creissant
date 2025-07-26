@@ -39,50 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
   counters.forEach(counter => observer.observe(counter));
 });
 
-//    document.addEventListener("DOMContentLoaded", () => {
-//     const counters = document.querySelectorAll(".count");
-
-//     counters.forEach(counter => {
-//       const target = +counter.getAttribute("data-target");
-//       let current = 0;
-//       const increment = target / 100;
-
-//       const updateCount = () => {
-//         current += increment;
-//         if (current < target) {
-//           counter.textContent = Math.floor(current) + "+";
-//           requestAnimationFrame(updateCount);
-//         } else {
-//           counter.textContent = target + "+";
-//         }
-//       };
-
-//       updateCount();
-//     });
-//   });
-
-//     document.addEventListener("DOMContentLoaded", () => {
-//     const counters = document.querySelectorAll(".count");
-
-//     counters.forEach(counter => {
-//       const target = +counter.getAttribute("data-target");
-//       const isK = counter.getAttribute("data-format") === "K";
-//       let count = 0;
-//       const increment = target / 100;
-      
-//       const update = () => {
-//         count += increment;
-//         if (count < target) {
-//           counter.textContent = Math.floor(count);
-//           requestAnimationFrame(update);
-//         } else {
-//           counter.textContent = isK ? target + "K" : target;
-//         }
-//       };
-
-//       update();
-//     });
-//   });
 $(document).ready(function(){
   $("#successCarousel").owlCarousel({
     loop: true,

@@ -137,62 +137,6 @@ window.addEventListener("load", () => {
 });
 
 
- 
- const teamData = [
-    {
-      name: "Ralph Edwards",
-      role: "Junior Worker",
-      desc: "We adhere to strict quality control and use premium materials. Each member of our team brings specialized expertise, ensuring flawless execution and a seamless construction experience.",
-      image: "image/team1.avif"
-    },
-    {
-      name: "John Carter",
-      role: "Senior Engineer",
-      desc: "John is a civil engineer specializing in foundation and structural design. He ensures every structure stands the test of time.",
-      image: "image/team2.avif"
-    },
-    {
-      name: "Ajay Kumar",
-      role: "Architect",
-      desc: "Ajay crafts efficient layouts and stunning building facades. His design philosophy combines function and beauty.",
-      image: "image/team3.jpg"
-    },
-    {
-      name: "David Lee",
-      role: "Project Manager",
-      desc: "David oversees end-to-end project execution, client communication, and milestone deliveries with precision.",
-      image: "image/team4.jpg"
-    }
-  ];
 
-  function setProfile(index) {
-    const selected = teamData[index];
-    document.getElementById("profile-name").textContent = selected.name;
-    document.getElementById("profile-role").textContent = selected.role;
-    document.getElementById("profile-desc").textContent = selected.desc;
-    document.getElementById("profile-img").src = selected.image;
-
-    // Update active image
-    const thumbnails = document.querySelectorAll(".team-thumbnails img");
-    thumbnails.forEach((img, i) => {
-      img.classList.toggle("active", i === index);
-    });
-  }
-
-const reasons = document.querySelectorAll('.reason');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.2
-});
-
-reasons.forEach(reason => {
-  observer.observe(reason);
-});
 
 
