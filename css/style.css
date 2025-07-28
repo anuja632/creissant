@@ -811,6 +811,7 @@ body {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
+      gap:10px;
     }
 
     .step {
@@ -2700,6 +2701,8 @@ svg {
   text-align: justify;
   font-size: 13px !important;
 }
+  .steps-label {
+    font-size: 11px;}
 
 .tab-image img {
     /* width: 450px; */
