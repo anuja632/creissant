@@ -146,22 +146,3 @@ const testimonials = [
             });
         });
         
-
-document.addEventListener("DOMContentLoaded", () => {
-  const tabItems = document.querySelectorAll(".construction-journey .tabs li");
-  const tabContents = document.querySelectorAll(".construction-journey .tab-content");
-
-  tabItems.forEach(item => {
-    item.addEventListener("click", () => {
-      const targetTab = item.getAttribute("data-tab");
-
-      // Remove active from all
-      tabItems.forEach(tab => tab.classList.remove("active"));
-      tabContents.forEach(content => content.classList.remove("active"));
-
-      // Set active
-      item.classList.add("active");
-      document.getElementById(targetTab)?.classList.add("active");
-    });
-  });
-});

@@ -257,8 +257,8 @@ body {
   font-weight: 400;
   margin-left: auto;
   letter-spacing: 5px;
-  opacity: 0;
-  animation: animate 0.5s ease-in-out 0.3s 1 forwards;
+  /* opacity: 0; */
+  /* animation: animate 0.5s ease-in-out  1 forwards; */
 }
 
 .progress-bar-container {
@@ -899,7 +899,8 @@ body {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+   height: 100%;
   background: rgba(0,0,0, 0.85); /* subtle white overlay */
   z-index: -1;
 }
@@ -915,6 +916,10 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+.info-card p {
+  font-size: 14px;
+  text-align: justify;
+}
 /* Hover effect */
 .info-card:hover {
   background-color: rgb(102, 195, 105); /* green background */
@@ -2477,112 +2482,6 @@ svg {
   color: black;
   max-width: 700px;
   margin: 0 auto;
-}
-
-.tabs {
-  display: flex;
-  justify-content:space-between !important;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px;
-  border-bottom: 2px solid black;
-}
-
-.tabs li {
-  margin: 0 15px;
-  padding: 10px 0;
-  cursor: pointer;
-  position: relative;
-  color: black;
-  font-weight: 500;
-      font-size: 14px;
-}
-
-.tabs li.active {
-  color: rgb(102, 195, 105);
-}
-
-
-.tabs li.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 3px;
-  background: rgb(102, 195, 105); /* Light green */
-  border-radius: 2px;
-}
-
-
-.tab-container .tab-content {
-  display: none;
-  /* background: #fff; */
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.tab-container .tab-content.active {
-  display: block;
-}
-
-.tab-inner {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.tab-image {
-  flex: 1 1 40%;
-}
-
-.tab-image img {
-  /* width: 450px; */
-  max-width: 100%;
-  border-radius: 6px;
-}
-
-.tab-text {
-  flex: 1 1 50%;
-}
-
-.tab-text h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.tab-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: black;
-  text-align: justify;
-}
-
-.button-link {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: rgb(102, 195, 105);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.button-link:hover {
-  background: #469058;
-}
-
-@media(max-width: 768px) {
-  .tab-inner {
-    flex-direction: column;
-  }
-
-  .tabs {
-    flex-wrap: wrap;
-  }
 }
 
 .stats-section {
