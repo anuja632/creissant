@@ -1790,7 +1790,69 @@ svg {
   font-size: 14px;
   color: black;
 }
+.steps {
+  background: rgba(255, 255, 255, 0.1); /* fallback if nth-child fails */
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
 
+.steps:hover {
+  transform: translateY(-10px);
+}
+
+.steps:nth-child(1) {
+  background-image: url('../image/site.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.steps:nth-child(2) {
+  background-image: url('../image/aw.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.steps:nth-child(3) {
+  background-image: url('../image/permin.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.steps:nth-child(4) {
+  background-image: url('../image/pea.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.steps:nth-child(5) {
+  background-image: url('../image/final.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+    .steps-icon {
+      /* background-color: rgb(102, 195, 105); */
+      color:white;
+      /* width: 100px;
+      height: 100px;
+      border-radius: 50%; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      z-index: 3;
+      /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+    }
+
+    .steps-label {
+      margin-top: 10px;
+      font-weight: bold;
+      color:white;
+    }
 /* Responsive: hide line and stack steps */
 @media (max-width: 767.98px) {
   .process-line {
@@ -1830,7 +1892,7 @@ svg {
 }
 .about-gallery img {
   border-radius: 12px;
-  height: 300px !important;
+  height: 350px !important;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .tab-image img {
@@ -3227,9 +3289,12 @@ svg {
   white-space: nowrap;
   position: relative;
   padding: 30px 0;
-      background-color: #f6e8e8;
-
+  background-image: url('../image/12.jpg');
+  background-size: cover;
+  background-position: center;
+  color:white;
 }
+
 
 .logos::before,
 .logos::after {
@@ -3241,15 +3306,6 @@ svg {
   z-index: 2;
 }
 
-.logos::before {
-  left: 0;
-  background: linear-gradient(to right, #fff, transparent);
-}
-
-.logos::after {
-  right: 0;
-  background: linear-gradient(to left, #fff, transparent);
-}
 
 .logo_items {
   display: inline-block;
